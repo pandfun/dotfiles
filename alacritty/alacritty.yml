@@ -1,53 +1,147 @@
 # How far it can scroll back | 10000 lines
 # Each scroll will be 3 lines
 scrolling:
-  history: 10000 
-  multuplier: 3
+    history: 10000
+    multuplier: 3
 
 # Cursor styles
 cursor:
-  style:
-    shape: Block
-    blinking: Always
-    blink-interval: 750
+    style:
+        blinking: Always
+        blink-interval: 750
 
 # Fonts
 font:
-  normal:
-    family: JetBrains Mono
-    style: Medium
-  size: 12
-  
+    normal:
+        family: SF Mono
+        #family: Menlo
+        #family: JetBrains Mono
+        #family: CaskaydiaCove Nerd Font
+        #family: IBM Plex Mono
+        style: Regular
+    size: 12
 
-# Colors (iTerm 2 default theme)
+window:
+    dimensions:
+        lines: 32
+        columns: 110
+
+# # TokyoNight Alacritty Colors
+# colors:
+#   name: TokyoNight Night
+#   author: Folke
+#   # Default colors
+#   primary:
+#     background: '#1a1b26'
+#     foreground: '#c0caf5'
+
+#   # Normal colors
+#   normal:
+#     black:   '#15161E'
+#     red:     '#f7768e'
+#     green:   '#9ece6a'
+#     yellow:  '#e0af68'
+#     blue:    '#7aa2f7'
+#     magenta: '#bb9af7'
+#     cyan:    '#7dcfff'
+#     white:   '#a9b1d6'
+
+#   # Bright colors
+#   bright:
+#     black:   '#414868'
+#     red:     '#f7768e'
+#     green:   '#9ece6a'
+#     yellow:  '#e0af68'
+#     blue:    '#7aa2f7'
+#     magenta: '#bb9af7'
+#     cyan:    '#7dcfff'
+#     white:   '#c0caf5'
+
+#   indexed_colors:
+#     - { index: 16, color: '#ff9e64' }
+#     - { index: 17, color: '#db4b4b' }
+
+# # Colors (Terminal.app Basic)
+# colors:
+#   primary:
+#     background: '#FFFFFF'
+#     foreground: '#000000'
+#   normal:
+#     black:      '#000000'
+#     red:        '#990000'
+#     green:      '#00A600'
+#     yellow:     '#999900'
+#     blue:       '#0000B2'
+#     magenta:    '#B200B2'
+#     cyan:       '#00A6B2'
+#     white:      '#BFBFBF'
+#   bright:
+#     black:      '#666666'
+#     red:        '#E50000'
+#     green:      '#00D900'
+#     yellow:     '#E5E500'
+#     blue:       '#0000FF'
+#     magenta:    '#E500E5'
+#     cyan:       '#00E5E5'
+#     white:      '#E5E5E5'
+
+# #Colors (iTerm 2 default theme)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#101421'
+#     foreground: '#fffbf6'
+
+#   # Normal colors
+#   normal:
+#     black:   '#2e2e2e'
+#     red:     '#eb4129'
+#     green:   '#abe047'
+#     yellow:  '#f6c744'
+#     blue:    '#47a0f3'
+#     magenta: '#7b5cb0'
+#     cyan:    '#64dbed'
+#     white:   '#e5e9f0'
+
+#   # Bright colors
+#   bright:
+#     black:   '#565656'
+#     red:     '#ec5357'
+#     green:   '#c0e17d'
+#     yellow:  '#f9da6a'
+#     blue:    '#49a4f8'
+#     magenta: '#a47de9'
+#     cyan:    '#99faf2'
+#     white:   '#ffffff'
+
+# Basic Color Scheme
 colors:
-  # Default colors
-  primary:
-    background: '#101421'
-    foreground: '#fffbf6'
-
- # Normal colors
-  normal:
-    black:   '#2e2e2e'
-    red:     '#eb4129'
-    green:   '#abe047'
-    yellow:  '#f6c744'
-    blue:    '#47a0f3'
-    magenta: '#7b5cb0'
-    cyan:    '#64dbed'
-    white:   '#e5e9f0'
-
- # Bright colors
-  bright:
-    black:   '#565656'
-    red:     '#ec5357'
-    green:   '#c0e17d'
-    yellow:  '#f9da6a'
-    blue:    '#49a4f8'
-    magenta: '#a47de9'
-    cyan:    '#99faf2'
-    white:   '#ffffff'
+    primary:
+        background: "#171717"
+        foreground: "#FFFFFF"
+    cursor:
+        text: "#FFFFFF"
+        cursor: "#FFFFFF"
+    bright:
+        black: "#000000"
+        red: "#990000"
+        green: "#00A600"
+        yellow: "#999900"
+        blue: "#0000B2"
+        magenta: "#B200B2"
+        cyan: "#00A6B2"
+        white: "#FFFFFF"
+    normal:
+        black: "#666666"
+        red: "#E60000"
+        green: "#00D900"
+        yellow: "#E6E600"
+        #blue: "#0000FF"
+        blue: "#0050FF"
+        magenta: "#E600E6"
+        cyan: "#00E6E6"
+        white: "#FFFFFF"
 
 # Custom keybinds
 key_bindings:
-  - { key: T,   mods: Control, action: SpawnNewInstance }
+    - { key: T, mods: Control, action: SpawnNewInstance }
